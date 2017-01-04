@@ -14,8 +14,8 @@ set -e
 #
 
 # Reasonable defaults if no USER_ID/GROUP_ID environment variables are set.
-if [ -z ${USER_ID+x} ]; then USER_ID=1000; fi
-if [ -z ${GROUP_ID+x} ]; then GROUP_ID=1000; fi
+if [ -z ${USER_ID+x} ]; then USER_ID=501; fi
+if [ -z ${GROUP_ID+x} ]; then GROUP_ID=501; fi
 
 msg="docker_entrypoint: Creating user UID/GID [$USER_ID/$GROUP_ID]" && echo $msg
 groupadd -g $GROUP_ID -r aosp && \
