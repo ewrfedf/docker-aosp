@@ -32,7 +32,7 @@ echo "$msg - done"
 
 msg="docker_entrypoint: Creating /tmp/ccache and /aosp directory" && echo $msg
 mkdir -p /tmp/ccache /aosp
-chown aosp:aosp /tmp/ccache /aosp
+sudo chown aosp:aosp /tmp/ccache /aosp
 echo "$msg - done"
 
 echo ""
